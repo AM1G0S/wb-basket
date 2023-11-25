@@ -17,7 +17,7 @@ export const basketData = {
 					value: 0.1
 				},
 			],
-			attributes: {
+			properties: {
 				'Цвет': 'белый',
 				'Размер': '56',
 			},
@@ -56,7 +56,7 @@ export const basketData = {
 					value: 0.1
 				},
 			],
-			attributes: {
+			properties: {
 				'Цвет': 'прозрачный',
 			},
 			location: 'Коледино WB',
@@ -68,7 +68,7 @@ export const basketData = {
 			shippingSchedule: [
 				{
 					date: '5—6 февраля',
-					maxQuantity: 184
+					maxQuantity: 200
 				},
 				{
 					date: '7—8 февраля',
@@ -76,7 +76,7 @@ export const basketData = {
 				},
 				{
 					date: '9—10 февраля',
-					maxQuantity: 616
+					maxQuantity: 600
 				},
 			],
 			stock: 1000,
@@ -94,7 +94,7 @@ export const basketData = {
 			},
 			discounts: [
 				{
-					name: 'Скидка 48%',
+					name: 'Скидка 55%',
 					value: 0.48
 				},
 				{
@@ -102,7 +102,7 @@ export const basketData = {
 					value: 0.1
 				},
 			],
-			attributes: {},
+			properties: {},
 			location: 'Коледино WB',
 			supplier: {
 				title: 'OOO Вайлдберриз',
@@ -123,12 +123,12 @@ export const basketData = {
 		},
 	],
 	selectedIds: [1, 2, 3],
-	delivery: {
+	shipping: {
 		id: 'pickup-1',
 		type: 'pickup',
 		address: 'Бишкек, улица Ахматбека Суюмбаева, 12/1',
 		rating: 4.99,
-		workingHours: 'Ежедневно с 10 до 21',
+		wortTime: 'Ежедневно с 10 до 21',
 	},
 	payment: {
 		id: 'card-1',

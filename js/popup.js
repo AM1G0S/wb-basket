@@ -69,8 +69,8 @@ export function closePopup(event) {
 export function clearShippingInput(event) {
 	const dialog = event.target;
 	const checkedInput = dialog.querySelector('input.input-radio:checked');
-	const isWrongInputChecked = checkedInput.id !== basketData.delivery.id;
-	const correctInput = dialog.querySelector(`input#${basketData.delivery.id}`);
+	const isWrongInputChecked = checkedInput.id !== basketData.shipping.id;
+	const correctInput = dialog.querySelector(`input#${basketData.shipping.id}`);
 	
 	if (isWrongInputChecked) {
 		if (correctInput) {

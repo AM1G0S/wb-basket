@@ -391,6 +391,8 @@ function updateTotalPrice() {
 		
 		const discount = totalDiscountedPrice - totalOriginalPrice;
 		
+		console.log(totalDiscountedPrice)
+		
 		totalPriceElement.textContent = numberFormat(totalDiscountedPrice);
 		totalCountElement.textContent = numberFormat(totalCount);
 		totalCountTextElement.textContent = wordSelectionFrom(totalCount, ['товар', 'товара', 'товаров'])
@@ -428,7 +430,7 @@ export function calculateTotalCount() {
 // Изменение количества товара
 function changeProductCount(productID, newCount) {
 	const product = basketData.items.find(product => product.id == productID);
-	product.quantity = newCount;
+	product.count = newCount;
 	
 	updatePrice(product);
 	updateShippingDate();
